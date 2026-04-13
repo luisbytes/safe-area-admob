@@ -1,0 +1,7 @@
+{
+  "name": "safe-area-admob",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

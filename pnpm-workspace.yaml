@@ -1,0 +1,2 @@
+patchedDependencies:
+  '@capacitor/android@8.3.0': patches/@capacitor__android@8.3.0.patch
