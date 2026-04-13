@@ -3,7 +3,7 @@ include ':capacitor-android'
 project(':capacitor-android').projectDir = new File('../node_modules/.pnpm/@capacitor+android@8.3.0_patch_hash=26692fcae72cef36098c9840c537aa47a087d2591a17055acfc_090916214e34be8e96ba3d9f4823bcfc/node_modules/@capacitor/android/capacitor')
 
 include ':capacitor-community-admob'
-project(':capacitor-community-admob').projectDir = new File('../node_modules/.pnpm/@capacitor-community+admob@8.0.0/node_modules/@capacitor-community/admob/android')
+project(':capacitor-community-admob').projectDir = new File('../node_modules/.pnpm/@capacitor-community+admob@8.0.0_patch_hash=399fccb1a4f9e744fc1299b95f8876ff4a9f9be4ac4ed4835d349d975e34ca31/node_modules/@capacitor-community/admob/android')
 
 include ':capacitor-app'
 project(':capacitor-app').projectDir = new File('../node_modules/.pnpm/@capacitor+app@8.1.0_@capacitor+core@8.3.0/node_modules/@capacitor/app/android')

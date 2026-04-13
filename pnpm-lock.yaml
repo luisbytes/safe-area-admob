@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
+  '@capacitor-community/admob':
+    hash: 399fccb1a4f9e744fc1299b95f8876ff4a9f9be4ac4ed4835d349d975e34ca31
+    path: patches/@capacitor-community__admob.patch
   '@capacitor/android@8.3.0':
     hash: 26692fcae72cef36098c9840c537aa47a087d2591a17055acfcf35b35b8b4ce3
     path: patches/@capacitor__android@8.3.0.patch
@@ -39,7 +42,7 @@ importers:
         version: 20.3.18(@angular/common@20.3.18(@angular/core@20.3.18(@angular/compiler@20.3.18)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.18(@angular/compiler@20.3.18)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@20.3.18(@angular/animations@20.3.18(@angular/core@20.3.18(@angular/compiler@20.3.18)(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@20.3.18(@angular/core@20.3.18(@angular/compiler@20.3.18)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.18(@angular/compiler@20.3.18)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
       '@capacitor-community/admob':
         specifier: ^8.0.0
-        version: 8.0.0
+        version: 8.0.0(patch_hash=399fccb1a4f9e744fc1299b95f8876ff4a9f9be4ac4ed4835d349d975e34ca31)
       '@capacitor/android':
         specifier: 8.3.0
         version: 8.3.0(patch_hash=26692fcae72cef36098c9840c537aa47a087d2591a17055acfcf35b35b8b4ce3)(@capacitor/core@8.3.0)
@@ -6907,7 +6910,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@capacitor-community/admob@8.0.0':
+  '@capacitor-community/admob@8.0.0(patch_hash=399fccb1a4f9e744fc1299b95f8876ff4a9f9be4ac4ed4835d349d975e34ca31)':
     dependencies:
       '@capacitor/core': 8.3.0
       '@rdlabo/capacitor-docgen': 0.4.1

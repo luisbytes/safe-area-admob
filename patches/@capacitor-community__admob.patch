@@ -1,0 +1,54 @@
+diff --git a/android/src/main/java/com/getcapacitor/community/admob/banner/BannerExecutor.java b/android/src/main/java/com/getcapacitor/community/admob/banner/BannerExecutor.java
+index c6291395a02ca08db7dc3edd047ba57788aabab7..d14fa67cc6dbb764c4cdf3f0c05b65fe10d46b78 100644
+--- a/android/src/main/java/com/getcapacitor/community/admob/banner/BannerExecutor.java
++++ b/android/src/main/java/com/getcapacitor/community/admob/banner/BannerExecutor.java
+@@ -2,6 +2,7 @@ package com.getcapacitor.community.admob.banner;
+ 
+ import android.app.Activity;
+ import android.content.Context;
++import android.content.pm.PackageInfo;
+ import android.os.Build;
+ import android.util.DisplayMetrics;
+ import android.util.Log;
+@@ -13,6 +14,7 @@ import android.widget.RelativeLayout;
+ import androidx.annotation.NonNull;
+ import androidx.coordinatorlayout.widget.CoordinatorLayout;
+ import androidx.core.util.Supplier;
++import androidx.webkit.WebViewCompat;
+ import com.getcapacitor.JSObject;
+ import com.getcapacitor.PluginCall;
+ import com.getcapacitor.community.admob.helpers.AdViewIdHelper;
+@@ -34,6 +36,9 @@ public class BannerExecutor extends Executor {
+     private AdView mAdView;
+     private ViewGroup mViewGroup;
+ 
++    // https://issues.chromium.org/issues/40699457
++    private static final int WEBVIEW_VERSION_WITH_SAFE_AREA_FIX = 140;
++
+     public BannerExecutor(
+         Supplier<Context> contextSupplier,
+         Supplier<Activity> activitySupplier,
+@@ -104,7 +109,7 @@ public class BannerExecutor extends Executor {
+             }
+ 
+             // set Safe Area only for Android 15+
+-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
++            if (getWebViewMajorVersion() >= WEBVIEW_VERSION_WITH_SAFE_AREA_FIX) {
+                 View rootView = activitySupplier.get().getWindow().getDecorView();
+                 rootView.setOnApplyWindowInsetsListener((v, insets) -> {
+                     int bottomInset = insets.getSystemWindowInsetBottom();
+@@ -300,4 +305,14 @@ public class BannerExecutor extends Executor {
+                 mViewGroup.addView(mAdViewLayout);
+             });
+     }
++
++    private Integer getWebViewMajorVersion() {
++        PackageInfo info = WebViewCompat.getCurrentWebViewPackage(contextSupplier.get());
++        if (info != null && info.versionName != null) {
++            String[] versionSegments = info.versionName.split("\\.");
++            return Integer.valueOf(versionSegments[0]);
++        }
++
++        return 0;
++    }
+ }
