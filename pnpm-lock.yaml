@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
-  '@capacitor/android@8.3.0':
-    hash: 26692fcae72cef36098c9840c537aa47a087d2591a17055acfcf35b35b8b4ce3
-    path: patches/@capacitor__android@8.3.0.patch
+  '@capacitor/android@8.3.1':
+    hash: f6ca1856efc5b507bf871b0160d145c0c44902e87ce7e78fef6e13895f58ad08
+    path: patches/@capacitor__android@8.3.1.patch
 
 importers:
 
@@ -41,23 +41,23 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       '@capacitor/android':
-        specifier: 8.3.0
-        version: 8.3.0(patch_hash=26692fcae72cef36098c9840c537aa47a087d2591a17055acfcf35b35b8b4ce3)(@capacitor/core@8.3.0)
+        specifier: 8.3.1
+        version: 8.3.1(patch_hash=f6ca1856efc5b507bf871b0160d145c0c44902e87ce7e78fef6e13895f58ad08)(@capacitor/core@8.3.1)
       '@capacitor/app':
         specifier: 8.1.0
-        version: 8.1.0(@capacitor/core@8.3.0)
+        version: 8.1.0(@capacitor/core@8.3.1)
       '@capacitor/core':
-        specifier: 8.3.0
-        version: 8.3.0
+        specifier: 8.3.1
+        version: 8.3.1
       '@capacitor/haptics':
         specifier: 8.0.2
-        version: 8.0.2(@capacitor/core@8.3.0)
+        version: 8.0.2(@capacitor/core@8.3.1)
       '@capacitor/keyboard':
         specifier: 8.0.3
-        version: 8.0.3(@capacitor/core@8.3.0)
+        version: 8.0.3(@capacitor/core@8.3.1)
       '@capacitor/status-bar':
         specifier: 8.0.2
-        version: 8.0.2(@capacitor/core@8.3.0)
+        version: 8.0.2(@capacitor/core@8.3.1)
       '@ionic/angular':
         specifier: ^8.0.0
         version: 8.8.3(ea2d63b421c41b5e4537ce9b00d63dfd)
@@ -102,8 +102,8 @@ importers:
         specifier: ^20.0.0
         version: 20.3.18
       '@capacitor/cli':
-        specifier: 8.3.0
-        version: 8.3.0
+        specifier: 8.3.1
+        version: 8.3.1
       '@ionic/angular-toolkit':
         specifier: ^12.0.0
         version: 12.3.0(chokidar@4.0.3)
@@ -981,8 +981,8 @@ packages:
     resolution: {integrity: sha512-+ZIq+UtcNvTMFwjvuhOuGvCjwK2Wu36lTIl9o1/CEjfp2Aj3m4b9zQGx0vXrERYqQmJp/Ven7ee3gGuh2Ym8nA==}
     engines: {node: '>=22.0.0'}
 
-  '@capacitor/android@8.3.0':
-    resolution: {integrity: sha512-EQy6ByUuKayQBJmMm/e0byJiHavqsQHrvW23BuT2GNVQvenAvipqwaePiJHzrv2PZr7A0T0+se4kgDCeROj0mQ==}
+  '@capacitor/android@8.3.1':
+    resolution: {integrity: sha512-hjskIG8YcBEh3X4yaTXvE9gcqpdcxunTgFruSKnuPxtMxAUzEK4Oq25x0Z1g3cz+MQPc+lRG09R7Ovc+ydKsNw==}
     peerDependencies:
       '@capacitor/core': ^8.3.0
 
@@ -991,13 +991,13 @@ packages:
     peerDependencies:
       '@capacitor/core': '>=8.0.0'
 
-  '@capacitor/cli@8.3.0':
-    resolution: {integrity: sha512-n3QDUimtFNbagoo8kLdjvTz3i3Y4jX1fOjvo6ptUKLzErmuqeamL8kECASoyQvg/OzJisZToGZrgLphBsptJcw==}
+  '@capacitor/cli@8.3.1':
+    resolution: {integrity: sha512-1sPGW4THTDfR6YjXwZ0jM7oAfAtciPOHN00qs/3sNAQx1kKrrEYSfDPwCm1/xlAgi0OeL69SiRfw314Ans+1sw==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
-  '@capacitor/core@8.3.0':
-    resolution: {integrity: sha512-S4ajn4G/fS3VJj8salxqH/3LO5PPWv1VxGKQ27OCajnDcLJjEg9VXwgMPnlypgkIOqCJ2fmQLtk8GT+BlI9/rw==}
+  '@capacitor/core@8.3.1':
+    resolution: {integrity: sha512-UF8ItlHguU1Z6GXfPTeT2gakf+ctNI8pAS1kwSBQlsJMlfD4OPoto/SmKnOxKCQvnF4WRcdWeg6C0zREUNaAQg==}
 
   '@capacitor/haptics@8.0.2':
     resolution: {integrity: sha512-c2hZzRR5Fk1tbTvhG1jhh2XBAf3EhnIerMIb2sl7Mt41Gxx1fhBJFDa0/BI1IbY4loVepyyuqNC9820/GZuoWQ==}
@@ -2573,6 +2573,7 @@ packages:
   '@xmldom/xmldom@0.8.12':
     resolution: {integrity: sha512-9k/gHF6n/pAi/9tqr3m3aqkuiNosYTurLLUtc7xQ9sxB/wm7WPygCv8GYa6mS0fLJEHhqMC1ATYhz++U/lRHqg==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -6909,18 +6910,18 @@ snapshots:
 
   '@capacitor-community/admob@8.0.0':
     dependencies:
-      '@capacitor/core': 8.3.0
+      '@capacitor/core': 8.3.1
       '@rdlabo/capacitor-docgen': 0.4.1
 
-  '@capacitor/android@8.3.0(patch_hash=26692fcae72cef36098c9840c537aa47a087d2591a17055acfcf35b35b8b4ce3)(@capacitor/core@8.3.0)':
+  '@capacitor/android@8.3.1(patch_hash=f6ca1856efc5b507bf871b0160d145c0c44902e87ce7e78fef6e13895f58ad08)(@capacitor/core@8.3.1)':
     dependencies:
-      '@capacitor/core': 8.3.0
+      '@capacitor/core': 8.3.1
 
-  '@capacitor/app@8.1.0(@capacitor/core@8.3.0)':
+  '@capacitor/app@8.1.0(@capacitor/core@8.3.1)':
     dependencies:
-      '@capacitor/core': 8.3.0
+      '@capacitor/core': 8.3.1
 
-  '@capacitor/cli@8.3.0':
+  '@capacitor/cli@8.3.1':
     dependencies:
       '@ionic/cli-framework-output': 2.2.8
       '@ionic/utils-subprocess': 3.0.1
@@ -6942,21 +6943,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@capacitor/core@8.3.0':
+  '@capacitor/core@8.3.1':
     dependencies:
       tslib: 2.8.1
 
-  '@capacitor/haptics@8.0.2(@capacitor/core@8.3.0)':
+  '@capacitor/haptics@8.0.2(@capacitor/core@8.3.1)':
     dependencies:
-      '@capacitor/core': 8.3.0
+      '@capacitor/core': 8.3.1
 
-  '@capacitor/keyboard@8.0.3(@capacitor/core@8.3.0)':
+  '@capacitor/keyboard@8.0.3(@capacitor/core@8.3.1)':
     dependencies:
-      '@capacitor/core': 8.3.0
+      '@capacitor/core': 8.3.1
 
-  '@capacitor/status-bar@8.0.2(@capacitor/core@8.3.0)':
+  '@capacitor/status-bar@8.0.2(@capacitor/core@8.3.1)':
     dependencies:
-      '@capacitor/core': 8.3.0
+      '@capacitor/core': 8.3.1
 
   '@colors/colors@1.5.0': {}
 
