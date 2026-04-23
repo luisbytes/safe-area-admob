@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonFooter } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonFooter, IonInput } from '@ionic/angular/standalone';
 
 import { AdMob, BannerAdPosition } from '@capacitor-community/admob';
 
@@ -7,7 +7,7 @@ import { AdMob, BannerAdPosition } from '@capacitor-community/admob';
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonFooter],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonFooter, IonInput],
 })
 export class HomePage implements OnInit {
   constructor() { }
