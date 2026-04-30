@@ -1,12 +1,12 @@
 # Minimal reproduction
 
-This repository contains a minimal reproduction for the Comment https://github.com/ionic-team/capacitor/pull/8424#issuecomment-4216339816.
+This repository contains a minimal reproduction for the Comment https://github.com/ionic-team/capacitor/pull/8424#issuecomment-4307798967.
 
 ### Environment used for testing
 - macOS (development)
 - Ionic / Capacitor (this project)
-- Android Emulator 14 (API 34) With Play Store in Android Studio
-- Android WebView version 146 and 113
+- Android Emulator 16 (API 36) With Play Store in Android Studio
+- Android WebView version latest (146) and below (tested on 136) installed on the emulator
 
 ### Steps to reproduce
 1. Install project dependencies (this repo uses pnpm because a patch with the PR changes is applied):
@@ -27,7 +27,7 @@ pnpm start
 
 Below are screenshots that illustrate the issue described above.
 
-| Webview 146 | Webview 113 |
+| Android 16 WebView 146 | Android 16 WebView 136 |
 |---|---|
 | <img src="screenshots/one.png" alt="Screenshot 1" width="300" /> | <img src="screenshots/two.png" alt="Screenshot 2" width="300" /> |
 
